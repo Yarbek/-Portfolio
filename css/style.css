@@ -5,7 +5,11 @@
 #banner .myname h1 {
   font-size: 20px;
 }
-#banner .myname h1 span, .about h1 span, .service h1 span, .works h1 span, .connect h1 span, .footer h1 span {
+.active{
+  color: #f76783;
+  font-size: 15px;
+}
+#banner .myname h1 span, .about h1 span, .service h1 span, .works-1 h1 span, .connect h1 span, .footer h1 span {
   color: #f8718a;
 }
 .container {
@@ -54,6 +58,10 @@ line-height: 64px;
 .aboutBiography{
   text-align: center;
 }
+.aboutBiography p{
+    line-height: 28px;
+}
+
 .service-about{
   display: flex;
   justify-content: center;
@@ -62,7 +70,7 @@ line-height: 64px;
 .service-about div p {
       line-height: 30px;
 }
-.works {
+.works-1{
   text-align: center;
 }
 .connect{
@@ -105,3 +113,35 @@ footer{
   font-size: 14px;
   color: #757575;;
 }
+.biograp{
+  display: block;
+  background: #fff;
+  padding: 10px;
+}
+.education{
+  display: none;
+  background: #fff;
+  padding: 10px;
+}
+.works{
+  display: none;
+  background: #fff;
+  padding: 10px;
+}
+.expersion{
+  display: none;
+  background: #fff;
+  padding: 10px;
+}
+.bluecircle{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #4dc9d1;
+  position: absolute;
+  z-index: -1;
+  top:650px;
+  left: 150px;
+}
+
+/* #f7647f; */
