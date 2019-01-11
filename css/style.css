@@ -1,0 +1,107 @@
+  body{
+  margin: 0;
+  padding: 0;
+}
+#banner .myname h1 {
+  font-size: 20px;
+}
+#banner .myname h1 span, .about h1 span, .service h1 span, .works h1 span, .connect h1 span, .footer h1 span {
+  color: #f8718a;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.container-about{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.banner-left{
+  margin-top: 130px;
+}
+.banner-left h3 {
+
+  font-size: 50px;
+font-weight: 100;
+margin: 0;
+line-height: 64px;
+}
+.banner-left h6{
+  font-weight: 100;
+
+}
+.banner-left .container button{
+  background: #f76783;
+  border:0;
+  padding: 10px 30px;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: -1px 5px 14px #c5c5c5;
+  font-size: 16px;
+
+}
+.about{
+  text-align: center;
+}
+.aboutButton button{
+  padding: 15px 40px;
+  margin: 3px 10px;
+  background: #fff;
+  border: 1px solid #e6e6e6;;
+
+}
+.aboutBiography{
+  text-align: center;
+}
+.service-about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-about div p {
+      line-height: 30px;
+}
+.works {
+  text-align: center;
+}
+.connect{
+  text-align: center;
+}
+.connect input[type="text"]{
+  width: 50%;
+  margin: 10px auto;
+  background: #f3f9f9;
+  border: 0;
+  padding: 20px;
+
+
+}
+.connect input[type="submit"]{
+  background: #f76783;
+  border:0;
+  padding: 10px 30px;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: -1px 5px 14px #c5c5c5;
+  font-size: 16px;
+  margin-top: 45px;
+}
+.connect{
+  margin-bottom: 80px;
+}
+footer{
+  background: #e5f2f0;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.footer h1 {
+  font-size: 14px;
+
+  padding-top: 50px;
+}
+.footer p {
+  font-size: 14px;
+  color: #757575;;
+}
