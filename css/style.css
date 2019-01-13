@@ -17,6 +17,7 @@ p{
   margin: 0;
   padding: 1px;
   z-index: 10;
+  overflow: hidden;
 }
 #nav .container {
   display: flex;
@@ -42,6 +43,7 @@ li a{
 .activeA{
   color: #f76783;
   font-size:19px;
+  font-weight: 900;
 }
 .icon i {
   color: #fff;
@@ -57,16 +59,17 @@ li a{
   margin: 0 100px;
 
 }
-#nav .myname h1, #nav .myname h1  span, .footer  h1,.footer  h1 span {
+#nav .myname h1, #nav .myname h1  span, .footer  h1,.footer  h1 span , .about-slider h1,.about-slider h1 span {
   font-size: 20px;
   font-family: 'Charm', cursive;
   color: #fff;
 }
+
 .active{
   color: #f76783;
   font-size: 15px;
 }
-#nav .myname h1 span, .about h1 span, .service h1 span, .works-1 h1 span, .connect h1 span, .footer h1 span {
+.about-slider h1 span, #nav .myname h1 span, .about h1 span, .service h1 span, .works-1 h1 span, .connect h1 span, .footer h1 span {
   color: #f8718a;
 }
 .container {
@@ -75,7 +78,11 @@ li a{
 }
 .container-about{
   width: 70%;
-  margin: 0 auto;
+  margin: 10px auto;
+  box-shadow: 0 0 11px darkgrey;
+  padding: 20px 0;
+  padding-bottom: 40px;
+  background: #fff;
 }
 
 .banner-left{
@@ -103,6 +110,7 @@ line-height: 64px;
 
 }
 .about{
+  margin-top: 50px;
   text-align: center;
 }
 .aboutButton button{
@@ -119,7 +127,9 @@ line-height: 64px;
     line-height: 34px;
     padding:0 10px;
 }
-
+.service{
+  margin-top:40px;
+}
 .service-about{
   display: flex;
   justify-content: center;
@@ -159,14 +169,31 @@ line-height: 64px;
 footer{
   background: #e5f2f0;
   text-align: center;
-  padding: 0;
+  padding: 1px;
   margin: 0;
 }
 .footer h1 {
   font-size: 14px;
-
-  padding-top: 50px;
+  color: #000;
+  padding-top: 0px;
 }
+.footer .icon i{
+  color: #000;
+
+}
+.footer .icon i:hover{
+  color: #f76783;
+}
+.footer .iconsPanel p{
+  margin-left: 400px;
+}
+.footer .iconsPanel{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: center;
+}
+
 .footer p {
   font-size: 14px;
   color: #757575;;
@@ -198,9 +225,58 @@ footer{
   background: #4dc9d1;
   position: absolute;
   z-index: -1;
-  top:650px;
-  left: 150px;
+  top:710px;
+  left: 160px;
+}
+.redcircle{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #f76783;
+  position: absolute;
+  z-index: -1;
+  top:440px;
+  right: 80px;
 }
 
-
 /* #f7647f; */
+.about-my{
+  background: url("../img/myabout.png");
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  margin: 60px 0;
+
+}
+.about-slider{
+  position: relative;
+  top: 80px;
+  left: 590px;
+  width: 43%;
+  height: 370px;
+  background: #fff;
+}
+.about-slider p{
+  padding: 30px;
+  line-height: 28px;
+  padding-bottom:0;
+  position:
+}
+.about-slider > .container > button{
+  color:red;
+}
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #676767;
+
+}
+.about-slider h1{
+  padding-left: 30px;
+  line-height: 30px;
+  color: #000;
+}
