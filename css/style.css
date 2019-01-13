@@ -1,15 +1,72 @@
-  body{
+body{
   margin: 0;
   padding: 0;
 }
-#banner .myname h1 {
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+p{
+  font-size: 16px;
+  line-height: 1.5px;
+  color: #8a8a8a;
+}
+
+#nav{
+  background: #000;
+  margin: 0;
+  padding: 1px;
+  z-index: 10;
+}
+#nav .container {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  vertical-align: center;
+}
+#nav .meny ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+}
+#nav .meny ul li {
+  margin: 0 10px;
+}
+li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+
+}
+.activeA{
+  color: #f76783;
+  font-size:19px;
+}
+.icon i {
+  color: #fff;
+  margin: 0 7px;
+  font-size: 18px;
+}
+.icon i:hover {
+  color: #f76783;
+
+}
+.works-about > div {
+  text-align: center;
+  margin: 0 100px;
+
+}
+#nav .myname h1, #nav .myname h1  span, .footer  h1,.footer  h1 span {
   font-size: 20px;
+  font-family: 'Charm', cursive;
+  color: #fff;
 }
 .active{
   color: #f76783;
   font-size: 15px;
 }
-#banner .myname h1 span, .about h1 span, .service h1 span, .works-1 h1 span, .connect h1 span, .footer h1 span {
+#nav .myname h1 span, .about h1 span, .service h1 span, .works-1 h1 span, .connect h1 span, .footer h1 span {
   color: #f8718a;
 }
 .container {
@@ -59,7 +116,8 @@ line-height: 64px;
   text-align: center;
 }
 .aboutBiography p{
-    line-height: 28px;
+    line-height: 34px;
+    padding:0 10px;
 }
 
 .service-about{
@@ -143,5 +201,6 @@ footer{
   top:650px;
   left: 150px;
 }
+
 
 /* #f7647f; */
