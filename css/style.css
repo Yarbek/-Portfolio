@@ -377,6 +377,18 @@ p {
 
 }
 @media   screen and (max-width:320px) {
+
+
+.connect input[type="submit"] {
+    background: #f76783;
+    border: 0;
+    padding: 8px 25px;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: -1px 5px 14px #c5c5c5;
+    font-size: 16px;
+    margin-top: 45px;
+}
   .myname{
     display: block;
   }
