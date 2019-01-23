@@ -1,8 +1,10 @@
 $(document).ready(function(){
 
+    $("#home").click(function(){
+        $('html, body').animate({scrollTop:0}, 1000);
+    })
     $(".meny > ul > li").click(function(){
       let  id = $(this).attr("id");
-      console.log();
       if(id==1){
         $('html, body').animate({scrollTop:320}, 1000);
       } else if (id==2) {
@@ -18,27 +20,25 @@ $(document).ready(function(){
 
     $(window).scroll(function(e) {
       var newScroll = e.currentTarget.scrollY;
-      console.log(e.currentTarget.scrollY);
-      if(newScroll>20){
-        $("#nav").css("top","0");
-        $("#nav").css("width","100%");
-        $("#nav").css ("position","fixed");
+      if(newScroll>60){
+        $("#nav").css({top:"0",width:"100%",position:"fixed",opacity:"0.7",height: "58px"});
+
       }else{
         $("#nav").attr("style","");
       }
 
       if(newScroll<760){
-        $(".meny > ul > li > a").removeClass("activeA");
-        $(".meny > ul > li > a").eq(0).addClass("activeA");
+        $(".meny > ul > li").removeClass("activeA");
+        $(".meny > ul > li").eq(0).addClass("activeA");
       }else if(newScroll>=760 && newScroll<999 ){
-        $(".meny > ul > li > a").removeClass("activeA");
-        $(".meny > ul > li > a").eq(1).addClass("activeA");
+        $(".meny > ul > li").removeClass("activeA");
+        $(".meny > ul > li").eq(1).addClass("activeA");
       }else if(newScroll>=999 && newScroll<=1919){
-        $(".meny > ul > li > a").removeClass("activeA");
-        $(".meny > ul > li > a").eq(2).addClass("activeA");
+        $(".meny > ul > li").removeClass("activeA");
+        $(".meny > ul > li").eq(2).addClass("activeA");
       }else {
-        $(".meny > ul > li > a").removeClass("activeA");
-        $(".meny > ul > li > a").eq(3).addClass("activeA");
+        $(".meny > ul > li ").removeClass("activeA");
+        $(".meny > ul > li ").eq(3).addClass("activeA");
       }
 
 

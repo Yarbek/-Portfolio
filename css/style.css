@@ -2,6 +2,19 @@ body{
   margin: 0;
   padding: 0;
 }
+#scrollTop{
+  position: relative;
+  top: 500px;
+  left: 95%;
+  line-height: 50px;
+  font-size: 20px;
+  vertical-align: center;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: red;
+}
 *{
   font-family: 'Roboto', sans-serif;
 }
@@ -18,12 +31,19 @@ p{
   padding: 1px;
   z-index: 10;
   overflow: hidden;
+  position: fixed;
+  top:0;
+  height: 65px;
+  width: 100%;
 }
 #nav .container {
   display: flex;
   justify-content:space-around;
   align-items: center;
   vertical-align: center;
+}
+#home:hover{
+  cursor: pointer;
 }
 #nav .meny ul {
   display: flex;
@@ -33,6 +53,15 @@ p{
 }
 #nav .meny ul li {
   margin: 0 10px;
+
+  list-style: none;
+}
+li{
+  color: #fff;
+
+}
+li:hover{
+  cursor: pointer;
 }
 li a{
   text-decoration: none;
@@ -40,7 +69,7 @@ li a{
   font-size: 17px;
 
 }
-.activeA{
+.activeA {
   color: #f76783;
   font-size:19px;
   font-weight: 900;
@@ -144,14 +173,12 @@ line-height: 64px;
 .connect{
   text-align: center;
 }
-.connect input[type="text"]{
+.connect input[type="text"], textarea{
   width: 50%;
   margin: 10px auto;
   background: #f3f9f9;
   border: 0;
   padding: 20px;
-
-
 }
 .connect input[type="submit"]{
   background: #f76783;
@@ -279,4 +306,126 @@ footer{
   padding-left: 30px;
   line-height: 30px;
   color: #000;
+}
+/*  Mobilnitga utkazish */
+@media  screen and (max-width:1024px){
+.about-slider {
+    position: relative;
+    top: 76px;
+    left: 563px;
+    width: 44%;
+    height: 348px;
+    background: #fff;
+}
+.about-my {
+    overflow: hidden;
+}
+.service-about div p {
+    line-height: 22px;
+}
+p {
+    font-size: 14px;
+    line-height: 1.5px;
+    color: #8a8a8a;
+}
+.works-about div img{
+  width: 201px;
+  text-align: center;
+}
+
+}
+
+@media  screen and (max-width:768px){
+  #nav .myname h1, #nav .myname h1  span, .footer  h1,.footer  h1 span , .about-slider h1,.about-slider h1 span {
+    font-size: 14px;
+    font-family: 'Charm', cursive;
+    color: #fff;
+  }
+  #nav .meny ul li {
+    margin: 0 10px;
+    list-style: none;
+    font-size: 14px;
+  }
+  .icon i {
+    color: #fff;
+    margin: 0 7px;
+    font-size: 15px;
+  }
+  #nav {
+    height: 58px;
+
+  }
+  .about-slider h1 span, #nav .myname h1 span, .about h1 span, .service h1 span, .works-1 h1 span, .connect h1 span, .footer h1 span {
+    color: #f8718a;
+  }
+  .works-about div img{
+    width: 150px;
+    text-align: center;
+  }
+  .about-slider{
+    display: none;
+
+  }
+  .footer .iconsPanel p {
+    margin-left: 239px;
+  }
+  p {
+      font-size: 12px;
+      line-height: 1.5px;
+      color: #8a8a8a;
+  }
+
+}
+@media   screen and (max-width:320px) {
+  .myname{
+    display: block;
+  }
+  .activeA{
+    display: none;
+  }
+  ul li{
+    display: none;
+  }
+  .banner-left div h3{
+    font-size: 24px;
+    line-height: 39px;
+  }
+  .banner-left .container button {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .redcircle {
+    display: none;
+  }
+  .bluecircle {
+    display: none;
+  }
+  .aboutButton button {
+    padding: 13px 9px;
+    margin: 2px 4px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    font-size: 10px;
+  }
+  .aboutBiography p {
+    line-height: 25px;
+  }
+  .service-about {
+    flex-direction: column;
+  }
+  .works-about div img{
+    width: 50px;
+    text-align: center;
+  }
+  .footer .iconsPanel p {
+    font-size: 10px;
+    margin-left: 22px;
+
+  }
+  .works-1{
+    display: none;
+  }
+  .about-my{
+    display: none;
+  }
 }
